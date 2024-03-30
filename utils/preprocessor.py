@@ -63,7 +63,7 @@ class Preprocessor(L.LightningDataModule):
                     
                     data_line = json.loads(dd)
                     paragraphs = self.join_paragraphs(data_line["paragraphs"])
-                    summary = self.join_paragraphs(data_line["summary"])
+                    summary = self.join_summary(data_line["summary"])
                     
                     data = {
                         "id": data_line["id"],
