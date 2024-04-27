@@ -115,6 +115,8 @@ class Preprocessor(L.LightningDataModule):
         y_att = torch.tensor(y_att)
 
         return TensorDataset(x_ids, x_att, y_ids, y_att)
+        # x_ids = token
+        # x_att = attention_mask
 
 
     def preprocessor(self):
