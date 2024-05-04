@@ -11,7 +11,8 @@ if __name__ == "__main__":
     data = indosum_pre.train_dataloader()
 
     trainer = L.Trainer(
-        accelerator="gpu",
+        # accelerator="gpu",
+        accelerator="cpu",
         max_epochs=400,
     )
 

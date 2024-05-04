@@ -11,6 +11,7 @@ from indobenchmark import IndoNLGTokenizer
 
 import evaluate
 
+from torchmetrics.text.rouge import ROUGEScore
 
 class IndoSum(L.LightningModule):
     def __init__(self, lr):
